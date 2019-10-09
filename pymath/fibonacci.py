@@ -85,8 +85,8 @@ class Fibonacci:
         return self.is_fibs(*args)
 
     def __str__(self):
-        return "Fibonacci sequence [" + str(self.n1) \
-               + ", " + str(self.n2) + ", ...]"
+        return "Fibonacci sequence [" + str(self.x1) \
+               + ", " + str(self.x2) + ", ...]"
 
     def is_fib(self, n, custom=None):
         """
@@ -320,7 +320,7 @@ class Fibonacci:
 
     def get_numbers(self):
         """Get current custom start values, returns tuple (int, int)"""
-        return self.n1, self.n2
+        return self.x1, self.x2
 
     def set_numbers(self, numbers):
         """
@@ -331,7 +331,7 @@ class Fibonacci:
         param numbers: list of [int, int], setters for first and second numbers
         of custom sequencce
         """
-        self.n1, self.n2 = numbers
+        self.x1, self.x2 = numbers
         self.custom_flag = True
 
     def is_custom(self):
@@ -344,7 +344,7 @@ class Fibonacci:
 
     def reset(self):
         """Resets default fibonacci sequence"""
-        self.n1, self.n2, self.custom_flag = 0, 1, False
+        self.x1, self.x2, self.custom_flag = 0, 1, False
 
     # property to easy access; f = Fibonacci()
     #
@@ -377,6 +377,5 @@ __all__ = ["Fibonacci"]
 
 if __name__ == '__main__':
     f = Fibonacci()
-    f.numbers = 1, 2
-    f.reset()
-    print(f.is_custom())
+    f.numbers = 8, 40
+    print(f.get_ratio(10))
