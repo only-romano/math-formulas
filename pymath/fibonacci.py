@@ -154,6 +154,8 @@ class Fibonacci:
 
             # custom sequence
             if custom:
+                if not isinstance(custom, (list, tuple)):
+                    raise TypeError("Custom sequence must be a list or tuple")
                 if len(custom):
                     x1 = custom[0]
                     if n < 0:
@@ -377,5 +379,4 @@ __all__ = ["Fibonacci"]
 
 if __name__ == '__main__':
     f = Fibonacci()
-    f.numbers = 8, 40
-    print(f.get_ratio(10))
+    print(f.get_fib(10))
