@@ -1,8 +1,28 @@
-# pymath
+# _pymath_ Module
 
-> sep 2019 - ... (ongoing)
+___
 
-#### Module with formulas and helpers for algebra, geometry, statistics etc.
 
-### Contents:
-+ [Algebra](algebra/)
+###### EN
+
+
+#### Python math module. Highschool and University algebra, geometry, statistics, calculus, economic.
+
+
+###### RU
+
+
+#### Модуль для Python. Школьная и университетская математика, статистика, геометрия.
+
+___
+
+
+> Python Package
+
+* State: **Active**
+* Stack:
+    + Python
+* _Stages_:
+    + Project start: 2019, Sep
+    + Alpha: ~~ 2020
+
